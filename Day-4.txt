@@ -1,0 +1,161 @@
+---------IF–ELSE Based Coding Questions (5 Questions)---------
+Q1. Check Odd or Even
+int n = 7;
+if (n % 2 == 0)
+    System.out.println("Even");
+else
+    System.out.println("Odd");
+
+
+Q2. Check Vowel or Consonant
+char ch = 'a';
+if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+    ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+    System.out.println("Vowel");
+else
+    System.out.println("Consonant");
+
+
+Q3. Find Largest of Three Numbers
+int a=10,b=20,c=15;
+if (a>=b && a>=c)
+    System.out.println(a);
+else if (b>=a && b>=c)
+    System.out.println(b);
+else
+    System.out.println(c);
+
+
+Q4. Check Eligibility for Voting
+int age = 19;
+if (age >= 18)
+    System.out.println("Eligible to vote");
+else
+    System.out.println("Not eligible");
+
+
+Q5. Check if Number is Positive, Negative or Zero 
+int n = -5;
+if (n > 0)
+    System.out.println("Positive");
+else if (n < 0)
+    System.out.println("Negative");
+else
+    System.out.println("Zero");
+
+
+---------SWITCH Based Coding Questions (5 Questions)---------
+Q1. Day of Week
+int day = 3;
+switch(day){
+    case 1: System.out.println("Monday"); break;
+    case 2: System.out.println("Tuesday"); break;
+    case 3: System.out.println("Wednesday"); break;
+    case 4: System.out.println("Thursday"); break;
+    case 5: System.out.println("Friday"); break;
+    case 6: System.out.println("Saturday"); break;
+    case 7: System.out.println("Sunday"); break;
+    default: System.out.println("Invalid");
+}
+
+
+Q2. Simple Calculator
+int a=10,b=5;
+char op='+';
+switch(op){
+    case '+': System.out.println(a+b); break;
+    case '-': System.out.println(a-b); break;
+    case '*': System.out.println(a*b); break;
+    case '/': System.out.println(a/b); break;
+    default: System.out.println("Invalid operator");
+}
+
+Q3. Month Name
+int m = 4;
+switch(m){
+    case 1: System.out.println("January"); break;
+    case 2: System.out.println("February"); break;
+    case 3: System.out.println("March"); break;
+    case 4: System.out.println("April"); break;
+    default: System.out.println("Invalid month");
+}
+
+
+Q4. Grade System
+char grade = 'A';
+switch(grade){
+    case 'A': System.out.println("Excellent"); break;
+    case 'B': System.out.println("Good"); break;
+    case 'C': System.out.println("Average"); break;
+    case 'D': System.out.println("Pass"); break;
+    default: System.out.println("Fail");
+}
+
+Q5. Check Vowel or Consonant
+char ch='e';
+switch(ch){
+    case 'a': case 'e': case 'i': case 'o': case 'u':
+    case 'A': case 'E': case 'I': case 'O': case 'U':
+        System.out.println("Vowel"); break;
+    default:
+        System.out.println("Consonant");
+}
+
+
+---------FOR LOOP---------
+Q1. Print numbers 1 to 10
+Use a for-loop to print 1,2,3…10.
+for(int i=1;i<=10;i++)
+    System.out.print(i+" ");
+
+Q2. Print even numbers from 1 to 20
+Print only even numbers.
+for(int i=2;i<=20;i+=2)
+    System.out.print(i+" ");
+
+---------while loop---------
+Q3. Print odd numbers from 1 to 20
+int i=1;
+while(i<=20){
+    System.out.print(i+" ");
+    i+=2;
+}
+
+Q4. Print table of 5
+5 × 1 … 5 × 10
+int i=1;
+while(i<=10){
+    System.out.println("5 x "+i+" = "+(5*i));
+    i++;
+}
+
+Q5. Print first N natural numbers
+Input N → print 1 to N.
+int n=5,i=1;
+while(i<=n){
+    System.out.print(i+" ");
+    i++;
+}
+
+---------do while---------
+Q6. Print numbers from 10 to 1 (reverse order)
+int i=10;
+do{
+    System.out.print(i+" ");
+    i--;
+}while(i>=1);
+
+Q7. Print alphabets from A to Z
+char ch='A';
+do{
+    System.out.print(ch+" ");
+    ch++;
+}while(ch<='Z');
+
+Q8. Print sum of first 10 natural numbers
+int i=1,sum=0;
+do{
+    sum+=i;
+    i++;
+}while(i<=10);
+System.out.println(sum);
