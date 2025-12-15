@@ -1,0 +1,40 @@
+Q.1 Difference between == and .equals() in Java
+| `==` Operator                              | `.equals()` Method                     |
+| ------------------------------------------ | -------------------------------------- |
+| Compares **memory references** (addresses) | Compares **content/values** of objects |
+| Used with **primitive & reference types**  | Used only with **objects**             |
+| For primitives, compares actual values     | Logic depends on class implementation  |
+| Cannot be overridden                       | Can be overridden                      |
+| Faster, checks equality at reference level | Checks logical equality                |
+
+For ex-
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1 == s2);      // false
+System.out.println(s1.equals(s2)); // true
+Explanation-
+== checks if both variables point to the same object, while .equals() checks if the contents are the same.
+
+Q.2 Difference between Methods and Functions
+           Function                           | Method                                                 |
+----------------------------------------------|--------------------------------------------------------|
+A block of code that performs a specific task | A function that is associated with an object or class  |
+Independent (not tied to a class/object)      | Belongs to a class or object                           |
+Called directly by its name                   | Called using an object or class reference              |
+Works on data passed as parameters            | Can directly access object’s data (instance variables) |
+Not necessarily object-oriented               | Core concept of Object-Oriented Programming            |
+C, Python (standalone functions)              | Java, Python, C++ (class methods)                      |
+->Hence, functions are nothing but methods in java
+Code-
+class Demo {
+    void show() {   // method
+        System.out.println("This is a method");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        d.show();   // method call
+    }
+}
