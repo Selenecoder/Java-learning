@@ -1,0 +1,49 @@
+1. Method oeverloading-
+Method overloading means same method name with different parameters (number, type, or order) in the same class.
+It is compile-time polymorphism.
+code-
+int add(int a, int b) {}
+int add(int a, int b, int c) {}
+
+2. shadowing-
+Shadowing occurs when a local variable or parameter has the same name as an instance variable, so the local one hides (shadows) the instance variable.
+//hides the value of variable if new value is given
+code-
+class Test {
+    int x = 10;
+
+    void show(int x) {
+        System.out.println(x);       // local variable
+        System.out.println(this.x);  // instance variable
+    }
+}
+
+3. call by value(used in java)-
+A copy of the value is passed to the function
+Changes inside the function do NOT affect the original variable
+code-
+void change(int x) {
+    x = 20;
+}
+int a = 10;
+change(a);
+System.out.println(a); // 10
+
+4. Call by Reference(in c++)-
+The actual variable (memory address) is passed
+Changes inside the function DO affect the original variable
+code-
+void change(int &x) {
+    x = 20;
+}
+int a = 10;
+change(a);
+cout << a; // 20
+
+One-line takeaway
+Call by value → copy passed
+Call by reference → actual variable passed
+Java → always call by value
+
+5. patterns-
+
